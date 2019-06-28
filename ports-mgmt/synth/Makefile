@@ -1,9 +1,10 @@
 # Created by: John Marino <marino@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: head/ports-mgmt/synth/Makefile 491886 2019-02-01 21:44:54Z ericbsd $
 
 PORTNAME=	synth
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.08
+PORTREVISION=	1
 CATEGORIES=	ports-mgmt
 
 MAINTAINER=	ericbsd@FreeBSD.org
@@ -12,8 +13,7 @@ COMMENT=	Custom package repository builder for FreeBSD and DragonFly
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/License.txt
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libncurses.a:devel/ncurses \
-		${GPR}/ini_file_manager.gpr:misc/ini_file_manager \
+BUILD_DEPENDS=	${GPR}/ini_file_manager.gpr:misc/ini_file_manager \
 		${GPR}/adacurses.gpr:devel/adacurses
 
 USES=		ada:6

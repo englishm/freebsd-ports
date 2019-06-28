@@ -1,8 +1,9 @@
 # Created by: olgeni@FreeBSD.org
-# $FreeBSD$
+# $FreeBSD: head/devel/adacurses/Makefile 498881 2019-04-14 09:31:17Z amdmi3 $
 
 PORTNAME=	adacurses
 DISTVERSION=	20180127
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.invisible-island.net/AdaCurses/
 DISTNAME=	AdaCurses-${DISTVERSION}
@@ -13,11 +14,11 @@ COMMENT=	Ada95 bindings for ncurses
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/README
 
-USES=		ada gmake pkgconfig ncurses:port tar:tgz
+USES=		ada gmake pkgconfig tar:tgz
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ada-include=${PREFIX}/include/adacurses \
 		--with-ada-objects=${PREFIX}/lib/adacurses \
-		--with-curses-dir=${NCURSESBASE} \
 		--libdir=${PREFIX}/lib/adacurses \
 		--enable-widec
 PORTDOCS=	ada Ada95.html
@@ -40,8 +41,8 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/gen/adacurses-config \
 		${STAGEDIR}${PREFIX}/bin/
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/gnat
-	${SED} "s|@PREFIX@|${NCURSESBASE}|g" ${FILESDIR}/adacurses.gpr.in > \
-		${STAGEDIR}${PREFIX}/lib/gnat/adacurses.gpr
+	${INSTALL_DATA} ${FILESDIR}/adacurses.gpr \
+		${STAGEDIR}${PREFIX}/lib/gnat/
 
 do-install-DOCS-on:
 	(cd ${WRKSRC}/doc && ${SETENV} ${MAKE_ENV} \
