@@ -1,5 +1,5 @@
-TIMESTAMP = 1559503341
-SHA256 (gnuradio-gnuradio-3.8tech-preview-381-g27dd99e49_GH0.tar.gz) = a07897ebf6d68588ca5b3635f87f0251be9234a8adc4b9e89c372caaecd9a737
-SIZE (gnuradio-gnuradio-3.8tech-preview-381-g27dd99e49_GH0.tar.gz) = 3386872
+TIMESTAMP = 1563595244
+SHA256 (gnuradio-gnuradio-v3.8.0.0-rc1_GH0.tar.gz) = 4fc74c2e7c911114393b2c0c6e94e2e86577000acb927f9ebdadc34054b70eaf
+SIZE (gnuradio-gnuradio-v3.8.0.0-rc1_GH0.tar.gz) = 3398019
 SHA256 (gnuradio-volk-d250816_GH0.tar.gz) = 334da8910cfadc2e1487ef2a651f8eaa472262a4bfd3fa7c38d913c8fc32cbd8
 SIZE (gnuradio-volk-d250816_GH0.tar.gz) = 252477
