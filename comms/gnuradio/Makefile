@@ -2,9 +2,7 @@
 
 PORTNAME=	gnuradio
 #MASTER_SITES=	http://gnuradio.org/releases/gnuradio/
-DISTVERSION=	3.8tech-preview-381
-DISTVERSIONSUFFIX=	-g27dd99e49
-PORTREVISION=	2
+DISTVERSION=	v3.8.0.0-rc2
 CATEGORIES=	comms astro hamradio
 
 MAINTAINER=	hamradio@FreeBSD.org
@@ -24,6 +22,8 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/ephem/__init__.py:astro/pyephem@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/mako/__init__.py:textproc/py-mako@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/six.py:devel/py-six@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/click/__init__.py:devel/py-click@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/click_plugins/__init__.py:devel/py-click-plugins@${PY_FLAVOR} \
 		aconnect:audio/alsa-utils \
 		cheetah:devel/py-cheetah@${PY_FLAVOR} \
 		cppzmq>0:net/cppzmq \
