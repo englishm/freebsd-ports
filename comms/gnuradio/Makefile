@@ -2,7 +2,7 @@
 
 PORTNAME=	gnuradio
 #MASTER_SITES=	http://gnuradio.org/releases/gnuradio/
-DISTVERSION=	v3.8.0.0-rc1
+DISTVERSION=	v3.8.0.0-rc2
 CATEGORIES=	comms astro hamradio
 
 MAINTAINER=	hamradio@FreeBSD.org
