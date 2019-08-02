@@ -71,7 +71,7 @@ CMAKE_ARGS+=	-DCMAKE_INSTALL_RPATH:STRING="${LOCALBASE}/lib/gcc${_GCC_VER}" \
 		-DXMLTO_EXECUTABLE:STRING=minixmlto
 # for detailed debugging uncomment the next line
 #CMAKE_ARGS+=	--debug-output --trace
-DOCSDIR=	share/doc/${PORTNAME}-3.8git
+DOCSDIR=	share/doc/${PORTNAME}-${DISTVERSION}
 USE_GNOME=	pygtk2
 USE_PYQT=	core gui opengl
 USE_WX=		3.0
