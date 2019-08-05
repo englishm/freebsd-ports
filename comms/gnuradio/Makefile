@@ -66,12 +66,12 @@ CMAKE_ARGS+=	-DCMAKE_INSTALL_RPATH:STRING="${LOCALBASE}/lib/gcc${_GCC_VER}" \
 		-DICONV_LIB:STRING="X${ICONV_LIB}" \
 		-DICONV_PREFIX:STRING="${ICONV_PREFIX}" \
 		-DLOCALBASE:STRING="${LOCALBASE}" \
+		-DGR_PKG_DOC_DIR:STRING="${DOCSDIR}" \
 		-DPYTHON_EXECUTABLE:STRING="${PYTHON_CMD}" \
 		-DSWIG_EXECUTABLE:STRING="${LOCALBASE}/bin/swig3.0"\
 		-DXMLTO_EXECUTABLE:STRING=minixmlto
 # for detailed debugging uncomment the next line
 #CMAKE_ARGS+=	--debug-output --trace
-DOCSDIR=	share/doc/${PORTNAME}-3.8git
 USE_GNOME=	pygtk2
 USE_PYQT=	core gui opengl
 USE_WX=		3.0
